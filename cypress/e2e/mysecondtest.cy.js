@@ -9,8 +9,8 @@ it('examples for css selectors', () => {
 })
  
  it('examples for xpath selectors',() => {
-  cy.get('//input[@value="male"]').click();
-  cy.get('//input[@value="sunday"]').click();
+  cy.xpath('//input[@value="male"]').click();
+  cy.xpath('//input[@value="sunday"]').click();
  })
 
  
