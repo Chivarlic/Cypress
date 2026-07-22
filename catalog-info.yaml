@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: 
+  description: Automation test suite for 
+  annotation:
+    backstage.io/source-location: url:
+    title: test Automation
+    tags: [cucumber, automation, qa,nodejs, cypress, javascript, typescript, playwright]
+    links:: []
+  spec:
+    type: service
+    owner: team
+    lifecycle: production
+    

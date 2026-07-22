@@ -1,0 +1,17 @@
+{
+  "post": {
+    "title":"Test",
+    "content": "<p>",
+    "categories": [],
+    "project": {
+       "name": "test"
+    },
+    "projectName": "Test",
+    
+    "featruedImage": {
+          "url": "",
+          "title": ""
+    }
+  }
+}
+

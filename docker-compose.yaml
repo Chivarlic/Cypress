@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  automation-test:
+    image: ${ECR_ENDPOINT}/${APP_NAME}/automation:${APP_TAG}
+    container_name: automation-test
+    ipc: host
+    build:
+      context: .
+      environment:
+        - CYPRESS_baseUrl
+        - CYPRESS_testType
+        - CYPRESS_deviceType
+        - CYPRESS_environment
+        - CYPRESS_browser
+        - CYPRESS_video
+        - CYPRESS_screenshot
+      entrypoint: ["yarn", "test"]
+      volumes:
+        - ./cypress:/usr/app/cypress
+        - ./cypress.config.js:/usr/app/cypress.config.js
